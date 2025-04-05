@@ -20,7 +20,7 @@
         gnomeExtensions.appindicator.extensionUuid
       ];
       favorite-apps = [
-        "brave-browser.desktop"
+        "firefox.desktop"
         "thunderbird.desktop"
         "discord.desktop"
         "code.desktop"

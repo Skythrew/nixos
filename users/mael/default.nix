@@ -7,5 +7,5 @@
     extraGroups = [ "wheel" "docker" ]; # Enable ‘sudo’ for the user.
   };
 
-  home-manager.users.mael = import ./home;
+  home-manager.users.mael = ./home;
 }

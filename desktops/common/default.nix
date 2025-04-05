@@ -1,10 +1,10 @@
 { config, pkgs, lib, ... }:
 
 {
+  programs.firefox.enable = true;
   programs.thunderbird.enable = true;
 
   environment.systemPackages = with pkgs; [
-    brave
     libreoffice-fresh
   ];
 

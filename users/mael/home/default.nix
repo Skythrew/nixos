@@ -1,7 +1,7 @@
-{ config, lib, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
-  imports = [ ./gnome ./dev ];
+  imports = [ ./gnome ./dev ./jupyter ];
 
   home.packages = with pkgs; [
     youtube-music

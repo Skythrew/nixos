@@ -19,7 +19,7 @@
   ];
 
   networking.hostName = "mmb5"; # Define your hostname.
-  
+
   virtualisation.docker.enable = true;
   virtualisation.docker.storageDriver = "btrfs";
 

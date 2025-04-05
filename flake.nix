@@ -13,9 +13,10 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
     nixosConfigurations.mmb5 = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
       modules = [
         home-manager.nixosModules.home-manager
 

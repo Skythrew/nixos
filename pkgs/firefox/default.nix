@@ -29,7 +29,8 @@
           installation_mode = "force_installed";
         };
       };
-      Preferences = { 
+      Preferences = {
+        "intl.locale.requested" = "fr,en-US";
         "browser.contentblocking.category" = { Value = "strict"; Status = "locked"; };
         "extensions.pocket.enabled" = false;
         "extensions.screenshots.disabled" = true;

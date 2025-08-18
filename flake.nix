@@ -26,5 +26,21 @@
         }
       ];
     };
+    nixosConfigurations.victus = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./hosts/victus
+        ./desktops/gnome
+        ./gaming
+        ./dev
+        ./users/mael
+
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+        }
+      ];
+    };
   };
 }

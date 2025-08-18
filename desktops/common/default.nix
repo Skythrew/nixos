@@ -61,6 +61,8 @@ in
     networking.firewall.allowedTCPPorts = [ 8611 ];
     networking.firewall.allowedUDPPorts = [ 8611 ];
 
+    services.flatpak.enable = true;
+
     # Enable sound with pipewire.
     services.pulseaudio.enable = false;
     security.rtkit.enable = true;

@@ -1,13 +1,6 @@
 { config, pkgs, lib, ... }:
 
 {
-  boot.kernelPatches = [
-    {
-      name = "usb-storage Novatek";
-      patch = ../../kernel/usb-storage.patch;
-    }
-  ];
-
   environment.systemPackages = with pkgs; [
     git
   ];

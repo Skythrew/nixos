@@ -44,7 +44,12 @@ in
       fastfetch
       vesktop
       youtube-music
+      libreoffice
+      hunspell
+      hunspellDicts.fr-moderne
     ];
+
+    # environment.pathsToLink = [ "share/hunspell" ];
 
     # Enable CUPS to print documents.
     services.printing.enable = true;
